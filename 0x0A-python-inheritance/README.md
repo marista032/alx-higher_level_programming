@@ -1,82 +1,89 @@
-# Python - Inheritance
+Task 0 - Write a function that reads a text file (UTF8) and prints it to stdout:
 
-In this project, I learned about Python class inheritance. I learned about the differences between super- and sub-classes while practicing inheritance, definining classes with multiple base classes, and overiding inherited methods and attributes.
+Task 1 - Write a function that reads a text file (UTF8) and prints it to stdout:
 
-## Tests :heavy_check_mark:
+Task 2 - Write a function that appends a string at the end of a text file (UTF8) and returns the number of characters added:
 
-* [tests](./tests): Folder of test files:
-    * [1-my_list.txt](./1-my_list.txt)
-    * [7-base_geometry.txt](./7-base_geometry.txt)
+Task 3 - Write a function that returns the JSON representation of an object (string)
 
-## Function Prototypes :floppy_disk:
+Task 4 - Write a function that returns an object (Python data structure) represented by a JSON string
 
-Prototypes for functions written in this project:
+Task 5 - Write a function that writes an Object to a text file, using a JSON representation
 
-| File                    | Prototype                             |
-| ----------------------- | ------------------------------------- |
-| `0-lookup.py`           | `def lookup(obj):`                    |
-| `2-is_same_class.py`    | `def is_same_class(obj, a_class):`    |
-| `3-is_kind_of_class.py` | `def is_kind_of_class(obj, a_class):` |
-| `4-inherits_from.py`    | `def inherits_from(obj, a_class):`    |
-| `101-add_attribute.py`  | `def add_attribute(obj, att, value):` |
+Task 6 - Write a function that creates an Object from a “JSON file
 
-## Tasks :page_with_curl:
+Task 7 - Write a script that adds all arguments to a Python list, and then save them to a file
 
-* **0. Lookup**
-  * [0-lookup.py](./0-lookup.py): Python function that returns a list of available attributes and methods of an objects.
+Task 8 - Write a function that returns the dictionary description with simple data structure (list, dictionary, string, integer and boolean) for JSON serialization of an object:
 
-* **1. My list**
-  * [1-my_list.py](./1-my_list.py): Python class `MyList` that inherits from `list`. Includes:
-    * Public instance method `def print_sorted(self):` that prints the list in ascending sorted order (assumes all list elements are `int`s).
+Task 9 - Write a class Student that defines a student by:
 
-* **2. Exact same object**
-  * [2-is_same_class.py](./2-is_same_class.py): Python function that returns `True` if an object is exactly an instance of a specified class; otherwise `False`.
+Public instance attributes:
 
-* **3. Same class or inherit from**
-  * [3-is_kind_of_class.py](./3-is_kind_of_class.py): Python function that returns `True` if an object is an instance or inherited instance of a specified class; otherwise `False`.
+first_name
 
-* **4. Only sub class of**
-  * [4-inherits_from.py](./4-inherits_from.py): Python function that returns `True` if an object is an inherited instance (either directly or indirectly) from a specified class; otherwise `False`.
+last_name
 
-* **5. Geometry module**
-  * [5-base_geometry.py](./5-base_geometry.py): An empty Python class `BaseGeometry`.
+age
 
-* **6. Improve Geometry**
-  * [6-base_geometry.py](./6-base_geometry.py): Python class `BaseGeometry`. Builds on [5-base_geometry.py](./5-base_geometry.py) with:
-    * Public instance method `def area(self):` that raises an `Exception` with
-    the message `area() is not implemented`.
+Task 10 - Write a class Student that defines a student by: (based on 9-student.py)
 
-* **7. Integer validator**
-  * [7-base_geometry.py](./7-base_geometry.py): Python class `BaseGeometry`. Builds on [6-base_geometry.py](./6-base_geometry.py) with:
-    * Public instance method `def integer_validator(self, name, value):` that validates the parameter `value`.
-    * Assumes the parameter `name` is always a string.
-    * The parameter `value` must be an `int`, otherwise, a `TypeError` exception is raised with the message `<name> must be an integer`.
-    * The parameter `value` must be greater than `0`, otherwise, a `ValueError` exception is raised with the message `<value> must be greater than 0`.
+Public instance attributes:
 
-* **8. Rectangle**
-  * [8-rectangle.py](./8-rectangle.py): Python class `Rectangle` that inherits from `BaseGeometry` ([7-base_geometry.py](./7-base_geometry.py)). Includes:
-    * Private attributes `width` and `height` - validated with `integer_validator`.
-    * Instantiation with `width` and `height`: `def __init__(self, width, height):`
+first_name
 
-* **9. Full rectangle**
-  * [9-rectangle.py](./9-rectangle.py): Python class `Rectangle` that inherits from `BaseGeometry` ([7-base_geometry.py](./7-base_geometry.py)). Builds on [8-rectangle.py](./8-rectangle.py) with:
-    * Implementation of the method `area()`.
-    * Special method `__str__` to print `Rectangle`s in the format `[Rectangle] <width>/<height>`.
+last_name
 
-* **10. Square #1**
-  * [10-square.py](./10-square.py): Python class `Square` that inherits from `Rectangle` ([9-rectangle.py](./9-rectangle.py)). Includes:
-    * Private attribute `size` - validated with `integer_validator`.
-    * Instantiation with `size`: `def __init__(self, size):`.
-    * Implementation of the `area()` method.
+age
 
-* **11. Square #2**
-  * [11-square.py](./11-square.py): Python class `Square` that inherits from `Rectangle` ([9-rectangle.py](./9-rectangle.py)). Builds on [10-square.py](./10-square.py) with:
-    * Special method `__str__` to print squares in the format `[Square] <width>/<height>`.
+Task 11 - Write a class Student that defines a student by: (based on 10-student.py)
 
-* **12. My integer**
-  * [100-my_int.py](./100-my_int.py): Python class `MyInt` that inherits from `int`. Includes:
-    * Inversion of the `==` and `!=` operators.
+Public instance attributes:
 
-* **13. Can I?**
-  * [101-add_attribute.py](./101-add_attribute.py): Python function that adds a new attribute to an object if possible.
-    * If an attribute cannot be added, a `TypeError` exception is raised with the message `can't add new attribute`.
+first_name
+
+last_name
+
+age
+
+Task 12 - Technical interview preparation:
+
+You are not allowed to google anything
+
+Whiteboard first
+
+Create a function def pascal_triangle(n): that returns a list of lists of integers representing the Pascal’s triangle of n:
+
+Returns an empty list if n <= 0
+
+You can assume n will be always an integer
+
+You are not allowed to import any module
+
+Task 13 - Write a function that inserts a line of text to a file, after each line containing a specific string (see example):
+
+Prototype: def append_after(filename="", search_string="", new_string=""):
+
+You must use the with statement
+
+Task 14 - Write a script that reads stdin line by line and computes metrics:
+
+Input format: <IP Address> - [<date>] "GET /projects/260 HTTP/1.1" <status code> <file size>
+
+Each 10 lines and after a keyboard interruption (CTRL + C), prints those statistics since the beginning:
+
+Total file size: File size: <total size>
+
+where is the sum of all previous (see input format above)
+
+Number of lines by status code:
+
+possible status code: 200, 301, 400, 401, 403, 404, 405 and 500
+
+if a status code doesn’t appear, don’t print anything for this status code
+
+format: <status code>: <number>
+
+status codes should be printed in ascending order
+
+
