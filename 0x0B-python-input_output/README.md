@@ -86,6 +86,3 @@ format: <status code>: <number>
 
 status codes should be printed in ascending order
 
-
-
-
